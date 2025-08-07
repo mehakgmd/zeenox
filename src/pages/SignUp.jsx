@@ -4,7 +4,7 @@ import SignupForm from '../components/Sign-Up';
 
 const Signup = () => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-gray-100 overflow-hidden">
+    <div className="relative pt-4 pb-4 min-h-screen flex items-center justify-center bg-gray-100 overflow-hidden">
       {/* Dotted background pattern */}
       {/* <div className="hidden md:block absolute top-5 left-96 w-32 h-32 opacity-70 pointer-events-none">
       <img 

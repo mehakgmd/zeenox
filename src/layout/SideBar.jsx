@@ -10,7 +10,7 @@ function Sidebar() {
       <div className="flex flex-col flex-1 overflow-y-auto">
         <nav className="flex flex-col flex-1 overflow-y-auto bg-gradient-to-b from-gray-700 to-blue-500 px-2 py-4 rounded-r-2xl">
           <div>
-            <a href="#" className="flex items-center pr-7">
+            <a href="#" className="flex items-center pr-9">
              <img
              src="/Logo/zeenox.png"
              />
