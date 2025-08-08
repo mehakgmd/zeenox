@@ -1,47 +1,73 @@
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BiHome, BiUser } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
-import { RiArticleLine } from "react-icons/ri";
 import { FaComments } from "react-icons/fa";
+import { MdOutlinePayment } from 'react-icons/md';
+import { Link } from "react-router-dom";
 
-function Sidebar() {
+const Sidebar = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   return (
-    <div className="hidden md:flex flex-col w-64 bg-gray-800 rounded-r-2xl">
-      <div className="flex flex-col flex-1 overflow-y-auto">
-        <nav className="flex flex-col flex-1 overflow-y-auto bg-gradient-to-b from-gray-700 to-blue-500 px-2 py-4 rounded-r-2xl">
-          <div>
-            <a href="#" className="flex items-center pr-9">
+    <>
+      {/* Hamburger Icon (mobile only) */}
+      <div className="md:hidden p-4">
+        <button onClick={() => setIsDrawerOpen(true)}>
+          <GiHamburgerMenu className="text-2xl text-gray-800" />
+        </button>
+      </div>
+
+      {/* Overlay (mobile only) */}
+      {isDrawerOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+          onClick={() => setIsDrawerOpen(false)}
+        />
+      )}
+
+      {/* Sidebar / Drawer */}
+      <div
+        className={`
+          fixed md:static top-0 left-0 h-full w-64 text-white z-50 
+          transform transition-transform duration-300
+          ${isDrawerOpen ? "translate-x-0" : "-translate-x-full"} 
+          md:translate-x-0 md:flex flex-col rounded-r-2xl
+        `}
+      >
+        <div className="flex flex-col h-full bg-gradient-to-b from-gray-700 to-blue-500 px-4 py-6 rounded-r-2xl">
+         {/* Logo */}
+          <div className="flex items-center mb-6">
+                 <a href="#" className="flex items-center pr-9">
              <img
              src="/Logo/zeenox.png"
              />
             </a>
           </div>
-          <div className="flex flex-col flex-1 gap-1">
-            <a href="#" className="flex items-center gap-2 px-4 py-2 mt-2 text-gray-100 hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl">
-              <BiHome style={{ fontSize: "20px" }} />
-              Home
-            </a>
-            <a href="#" className="flex items-center gap-2 px-4 py-2 mt-2 text-gray-100 hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl">
-              <CgProfile style={{ fontSize: "20px" }} />
-              Profile
-            </a>
-            <a href="#" className="flex items-center gap-2 px-4 py-2 mt-2 text-gray-100 hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl">
-              <RiArticleLine style={{ fontSize: "20px" }} />
-              Article
-            </a>
-            <a href="#" className="flex items-center gap-2 px-4 py-2 mt-2 text-gray-100 hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl">
-              <BiUser style={{ fontSize: "20px" }} />
-              Users
-            </a>
-            <a href="#" className="flex items-center gap-2 px-4 py-2 mt-2 text-gray-100 hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl">
-              <FaComments style={{ fontSize: "20px" }} />
-              Comments
-            </a>
-          </div>
-        </nav>
-      </div>
-    </div>
-  );
-}
 
+          {/* Navigation Links */}
+          <nav className="flex flex-col gap-2">
+            <SidebarLink icon={<BiHome />} text="Home" to="/dashboard"/>
+            <SidebarLink icon={<CgProfile />} text="Profile" />
+            <SidebarLink icon={<MdOutlinePayment />} text="Subscription" to="/subscriptions" />
+            <SidebarLink icon={<BiUser />} text="Users" />
+            <SidebarLink icon={<FaComments />} text="Comments" />
+          </nav>
+        </div>
+      </div>
+    </>
+  );
+};
+
+const SidebarLink = ({ icon, text, to }) => {
+  return (
+    <Link
+      to={to}
+      className="flex items-center gap-3 px-4 py-2 hover:bg-gray-700 text-white rounded transition-all"
+    >
+      {icon}
+      <span>{text}</span>
+    </Link>
+  );
+};
 export default Sidebar;
