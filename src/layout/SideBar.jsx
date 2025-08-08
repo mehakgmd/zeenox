@@ -63,7 +63,7 @@ const SidebarLink = ({ icon, text, to }) => {
   return (
     <Link
       to={to}
-      className="flex items-center gap-3 px-4 py-2 hover:bg-gray-700 text-white rounded transition-all"
+      className="flex items-center gap-3 px-4 py-2 hover:bg-gray-100 text-white rounded transition-all"
     >
       {icon}
       <span>{text}</span>
