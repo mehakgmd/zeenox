@@ -1,5 +1,3 @@
-// components/SubscriptionCard.jsx
-
 import React from 'react';
 
 const SubscriptionCard = ({ icon, title, price, benefits = [] }) => {

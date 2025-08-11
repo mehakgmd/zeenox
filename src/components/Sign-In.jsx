@@ -25,14 +25,13 @@ const SignInForm = () => {
         />
       </div>
 
-      {/* Centered Sign In Button with Top Margin */}
       <div className="flex justify-center mt-2">
-       <Link
-  to="/dashboard"
-  className="block w-full mt-2 text-center bg-blue-500 hover:bg-indigo-700 text-white font-semibold py-2 rounded-md"
->
-  Sign In
-</Link>
+        <Link
+          to="/dashboard"
+          className="block w-full mt-2 text-center bg-blue-500 hover:bg-indigo-700 text-white font-semibold py-2 rounded-md"
+        >
+          Sign In
+        </Link>
       </div>
 
       <div className="text-sm text-center mt-4 text-gray-600">

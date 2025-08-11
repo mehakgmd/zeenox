@@ -8,7 +8,7 @@ const Dashboard = () => {
   return (
     <div className="flex h-screen bg-gray-100">
 
-      <div className="flex flex-col flex-1 overflow-y-auto">
+      <div className="flex flex-col flex-1 ">
        {/* Main Content */}
         <div className="flex-1 p-8 overflow-y-auto">
       <h1 className="text-3xl font-bold text-blue-700 mb-6">ZEENOX EQUITY</h1>

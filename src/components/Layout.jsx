@@ -1,21 +1,21 @@
-// components/Layout.jsx
 import Sidebar from '../layout/SideBar';
-import TopNavbar from '../layout/TopNavbar'; // adjust path if needed
+import TopNavbar from '../layout/TopNavbar';
 import { Outlet } from 'react-router-dom';
+import { useState } from 'react';
 
 const Layout = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
     <div className="flex h-screen bg-gray-100">
-      {/* Sidebar always visible */}
-      <Sidebar />
+      {/* Sidebar */}
+      <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
 
-      {/* Main content area with TopNavbar + page content */}
-      <div className="flex-1 flex flex-col overflow-hidden">
-        {/* Top Navbar always visible */}
-        <TopNavbar />
+      <div className="flex-1 flex flex-col">
+        {/* Top Navbar */}
+        <TopNavbar onHamburgerClick={() => setIsSidebarOpen(true)} />
 
-        {/* Page content changes based on route */}
-        <div className="flex-1 overflow-y-auto p-4">
+        <div className="flex-1 p-4 overflow-y-auto">
           <Outlet />
         </div>
       </div>

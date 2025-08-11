@@ -23,7 +23,7 @@ export default function DepositFunds() {
       <div className=" text-black rounded-2xl shadow-lg w-full max-w-md p-5">
         <h2 className="text-xl font-bold mb-4">💰 Deposit Funds</h2>
         <p className="text-green-500 font-semibold mb-4">
-          Selected Plan: {planFromList.name}
+          Selected Plan: {planFromList.name.toLocaleString()}
         </p>
         <p>
           Selected Plan Amount:{" "}
@@ -51,8 +51,8 @@ export default function DepositFunds() {
         </div>
         <div className="mt-2 p-3 rounded-lg text-sm">
           <p><strong>🏦 Bank:</strong> Meezan Bank</p>
-          <p><strong>👤 Account Title:</strong> Attay Rides</p>
-          <p><strong>🔢 Account Number:</strong> 0840112094554</p>
+          <p><strong>👤 Account Title:</strong> Zeenox Equity</p>
+          <p><strong>🔢 Account Number:</strong> 03486716994</p>
           <p><strong>🏦 IBAN:</strong> PK10MEZN0002840112094554</p>
         </div>
 

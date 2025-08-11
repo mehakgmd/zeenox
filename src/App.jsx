@@ -5,7 +5,7 @@ import Dashboard from './pages/Dashboard';
 import Signup from './pages/SignUp'
 import SignIn from './pages/SignIn';
 import DepositFunds from './pages/Deposit';
-// import other pages...
+import UserProfile from './pages/UserProfile';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="subscriptions" element={<Subscription />} />
         <Route path="deposit" element={<DepositFunds />} />
-          {/* add more pages here */}
+        <Route path="profile" element={<UserProfile />} />
         </Route>
       </Routes>
     </BrowserRouter>
