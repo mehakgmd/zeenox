@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           md:translate-x-0 md:flex flex-col rounded-r-2xl
         `}
       >
-        <div className="flex flex-col h-full bg-gradient-to-b from-gray-700 to-blue-500 px-4 py-6 rounded-r-2xl">
+        <div className="flex flex-col h-full bg-gradient-to-b from-gray-800 to-blue-500 px-4 py-6 rounded-r-2xl">
           {/* Logo */}
           <div className="flex items-center mb-6 mr-6">
             <img src="/Logo/zeenox.png" alt="Logo" height={"10px"}/>

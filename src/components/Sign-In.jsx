@@ -7,6 +7,7 @@ const SignInForm = () => {
     <form className="space-y-2">
       <h2 className="text-2xl font-bold text-center text-gray-800">Sign In</h2>
 
+      {/* Email */}
       <div>
         <label className="block text-sm font-medium text-gray-700">Email</label>
         <input
@@ -16,6 +17,7 @@ const SignInForm = () => {
         />
       </div>
 
+      {/* Password */}
       <div>
         <label className="block text-sm font-medium text-gray-700">Password</label>
         <input
@@ -25,6 +27,17 @@ const SignInForm = () => {
         />
       </div>
 
+      {/* Forgot Password */}
+      <div className="text-right mt-1">
+        <Link
+          to="/forgot-password"
+          className="text-sm text-indigo-600 hover:underline font-medium"
+        >
+          Forgot Password?
+        </Link>
+      </div>
+
+      {/* Sign In Button */}
       <div className="flex justify-center mt-2">
         <Link
           to="/dashboard"
@@ -34,6 +47,7 @@ const SignInForm = () => {
         </Link>
       </div>
 
+      {/* Register Link */}
       <div className="text-sm text-center mt-4 text-gray-600">
         Don't have an account?{' '}
         <Link to="/" className="text-indigo-600 hover:underline font-medium">
