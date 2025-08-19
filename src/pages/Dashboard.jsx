@@ -31,7 +31,7 @@ export default function Dashboard() {
       title: "Equity Participation",
       desc: "Become a partner in real businesses with transparent, performance-based profit sharing.",
       img: "/Home-imgs/equity-participation.jpg",
-      link: "/Other-Pages/equity-participation",
+      link: "/equity-participation",
     },
     {
       title: "Idea Funding Partnership",
