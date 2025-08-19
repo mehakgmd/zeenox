@@ -8,8 +8,8 @@ import {
   FaLightbulb,
 } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
-import CTA from "../../components/CTA-Section";
-import Hero from "../../components/Hero-Section";
+import CTA from "../components/CTA-Section";
+import Hero from "../components/Hero-Section";
 
 const EquityParticipation = () => {
   return (

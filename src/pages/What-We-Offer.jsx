@@ -1,8 +1,8 @@
 "use client"
 import React from "react";
 import { FaChartLine, FaUsers, FaShieldAlt, FaHandshake } from "react-icons/fa";
-import CTA from "../../components/CTA-Section";
-import Hero from "../../components/Hero-Section";
+import CTA from "../components/CTA-Section";
+import Hero from "../components/Hero-Section";
 import { motion } from "framer-motion";
 const WhatWeOffer = () => {
   return (

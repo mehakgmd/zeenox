@@ -3,8 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaHandsHelping, FaLightbulb, FaGlobe } from "react-icons/fa";
-import CTA from "../../components/CTA-Section";
-import Hero from "../../components/Hero-Section";
+import CTA from "../components/CTA-Section";
+import Hero from "../components/Hero-Section";
 
 const Mission = () => {
   return (

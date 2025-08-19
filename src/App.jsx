@@ -6,11 +6,11 @@ import Signup from './pages/SignUp'
 import SignIn from './pages/SignIn';
 import DepositFunds from './pages/Deposit';
 import UserProfile from './pages/UserProfile';
-import Mission from './pages/Content-Pages/Mission';
+import Mission from './pages/Mission';
 import ForgotPassword from './pages/Forget-Password';
-import EquityParticipation from './pages/Content-Pages/Equity-Participation';
-import WhyChooseUs from './pages/Content-Pages/Why-Choose-Us';
-import WhatWeOffer from './pages/Content-Pages/What-We-Offer';
+import EquityParticipation from './pages/Equity-Participation';
+import WhyChooseUs from './pages/Why-Choose-Us';
+import WhatWeOffer from './pages/What-We-Offer';
 
 function App() {
   return (

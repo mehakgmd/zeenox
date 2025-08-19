@@ -1,7 +1,7 @@
 import React from "react";
 import { FaUsers, FaShieldAlt, FaChartLine } from "react-icons/fa";
-import CTA from "../../components/CTA-Section";
-import Hero from "../../components/Hero-Section";
+import CTA from "../components/CTA-Section";
+import Hero from "../components/Hero-Section";
 import { motion } from "framer-motion";
 
 const WhyChooseUs = () => {
