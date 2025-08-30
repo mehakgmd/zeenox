@@ -37,13 +37,13 @@ export default function Dashboard() {
       title: "Idea Funding Partnership",
       desc: "We support innovators with funding, expertise, and operational guidance to scale ideas.",
       img: "/Home-imgs/idea-funding.jpeg",
-      link: "/idea-funding",
+      link: "/idea-funding-partnership",
     },
     {
       title: "Strategic Business Agreements",
       desc: "Partnering with established companies to minimize risk and maximize returns.",
       img: "/Home-imgs/business-agreement.jpg",
-      link: "/strategic-agreements",
+      link: "/business-strategic-agreements",
     },
     {
       title: "Why Choose ZEENOX EQUITY?",

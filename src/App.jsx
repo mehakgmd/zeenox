@@ -11,6 +11,8 @@ import ForgotPassword from './pages/Forget-Password';
 import EquityParticipation from './pages/Equity-Participation';
 import WhyChooseUs from './pages/Why-Choose-Us';
 import WhatWeOffer from './pages/What-We-Offer';
+import IdeaFundingPartnership from './pages/Idea-Funding';
+import BusinessStrategicAgreements from './pages/Business-Strategic-Agreements';
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
           <Route path="equity-participation" element={<EquityParticipation />} />
           <Route path="why-choose-us" element={<WhyChooseUs />} />
           <Route path="what-we-offer" element={<WhatWeOffer />} />
+          <Route path="idea-funding-partnership" element={<IdeaFundingPartnership />} />
+          <Route path="business-strategic-agreements" element={<BusinessStrategicAgreements />} />
 
 
         </Route>
